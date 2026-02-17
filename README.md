@@ -1,6 +1,6 @@
 # 团子 AI (Duanzi AI)
 
-> 💡 **项目说明**：本项目是一个 **AI 辅助编程** 的实验性作品，核心代码由 GPT、Gemini、Claude、GLM 等模型生成。作为一个正在学习 ArkTS 的开发者，我非常欢迎社区提交 Issue 或 PR，一起交流与改进。
+> 💡 **项目说明**：本项目是一个 **AI 辅助编程** 的实验性作品，核心代码由 GPT、Claude、Gemini、GLM 等模型协助生成。作为一个正在学习 ArkTS 的开发者，我非常欢迎社区提交 Issue 或 PR，一起交流与改进。
 
 **团子 AI** 是一款专为 **HarmonyOS NEXT** 打造的现代化多模型 AI 对话客户端。它支持多 API 管理、流式响应、Markdown 完美渲染以及多模态交互（图片/文件），旨在为你提供流畅的原生鸿蒙 AI 体验。
 
@@ -75,12 +75,12 @@ entry/src/main/ets/
 
 1. **API Endpoint**：模型服务商的接口地址（如 OpenAI / DeepSeek / Claude 等兼容 API）。
 2. **API Key**：你的 API 密钥。
-3. **默认模型**：设置你需要调用的具体模型名称（如 `gpt-4o`, `gemini-1.5-pro` 等）。
+3. **默认模型**：设置你需要调用的具体模型名称（按服务商实际可用模型填写）。
 4. **参数微调**：可自定义温度（Temperature）与最大输出 Token 限制。
 
 ## ❤️ 致谢
 
-- 特别感谢 **GPT-4o**, **Gemini 1.5 Pro**, **Claude 3.5 Sonnet**, **GLM-4** 等 AI 模型在这个项目开发过程中提供的全方位协助。
+- 特别感谢 **GPT**、**Claude**、**Gemini**、**GLM** 在这个项目开发过程中提供的全方位协助。
 - 感谢 [lv-markdown-in](https://gitee.com/luvi/lv-markdown-in) 提供的优秀 Markdown 渲染组件。
 
 ---
