@@ -2,6 +2,8 @@
 
 请将 README 中引用的截图放到当前目录：
 
+- `cover.jpg`
+- `vision-demo.jpg`
 - `settings.jpg`
 - `html-preview.jpg`
 - `model-selector.jpg`

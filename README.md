@@ -1,8 +1,8 @@
-# HarmonyOS AI Chat
+# 团子 AI
 
 > 说明：这个项目基本是全 AI 编程做出来的（主要用了 GPT、Gemini、Claude、GLM）。我自己还在学 ArkTS，代码里肯定有不够好的地方，欢迎提 Issue / PR 一起改进。
 
-一个基于 HarmonyOS NEXT (ArkTS) 的多模型聊天客户端，支持流式回复、Markdown 渲染、代码块复制、附件发送与会话管理。
+团子 AI 是一款基于 HarmonyOS NEXT (ArkTS) 的 API 调用客户端：你可以添加不同的 API 配置，快速切换模型进行对话，并支持流式输出、Markdown 渲染、附件发送与会话管理。
 
 ## 功能特性
 
@@ -18,6 +18,8 @@
 
 > 截图建议放在 `docs/screenshots/`，以下是默认引用路径。
 
+![封面](docs/screenshots/cover.jpg)
+![识图演示](docs/screenshots/vision-demo.jpg)
 ![设置页](docs/screenshots/settings.jpg)
 ![HTML 预览](docs/screenshots/html-preview.jpg)
 ![模型选择](docs/screenshots/model-selector.jpg)
