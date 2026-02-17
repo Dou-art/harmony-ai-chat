@@ -1,75 +1,86 @@
-# 团子 AI
+# 团子 AI (Duanzi AI)
 
-> 说明：这个项目基本是全 AI 编程做出来的（主要用了 GPT、Gemini、Claude、GLM）。我自己还在学 ArkTS，代码里肯定有不够好的地方，欢迎提 Issue / PR 一起改进。
+> 💡 **项目说明**：本项目是一个 **AI 辅助编程** 的实验性作品，核心代码由 GPT、Gemini、Claude、GLM 等模型生成。作为一个正在学习 ArkTS 的开发者，我非常欢迎社区提交 Issue 或 PR，一起交流与改进。
 
-团子 AI 是一款基于 HarmonyOS NEXT (ArkTS) 的 API 调用客户端：你可以添加不同的 API 配置，快速切换模型进行对话，并支持流式输出、Markdown 渲染、附件发送与会话管理。
+**团子 AI** 是一款专为 **HarmonyOS NEXT** 打造的现代化多模型 AI 对话客户端。它支持多 API 管理、流式响应、Markdown 完美渲染以及多模态交互（图片/文件），旨在为你提供流畅的原生鸿蒙 AI 体验。
 
-## 功能特性
+## ✨ 核心特性
 
-- 多 API 配置管理（可切换不同服务商/模型）
-- 模型选择与搜索（按配置分组）
-- 对话流式输出与会话持久化
-- Markdown 渲染（代码块、引用等）
-- HTML 代码预览弹窗
-- 图片与文件附件发送
-- 历史会话按天分组
+- **多模型聚合**：支持按需添加 API 配置，快速切换不同服务商与模型。
+- **流畅交互**：全流程流式输出体验，对话无缝衔接。
+- **富文本渲染**：Markdown 渲染引擎加持，完美展示代码块、引用与公式。
+- **多模态支持**：支持发送图片与文件附件，不仅限于纯文本交流。
+- **HTML 预览**：内置 HTML 代码预览弹窗，无需离开应用即可查看结果。
+- **会话管理**：历史会话按天分组，且支持自动持久化存储。
 
-## 界面预览
-![封面](docs/screenshots/cover.jpg)
-![识图演示](docs/screenshots/vision-demo.jpg)
-![设置页](docs/screenshots/settings.jpg)
-![HTML 预览](docs/screenshots/html-preview.jpg)
-![模型选择](docs/screenshots/model-selector.jpg)
+## 📸 界面预览
 
-## 技术栈
+| 封面 | 识图演示 | 设置页 |
+| :---: | :---: | :---: |
+| ![封面](docs/screenshots/cover.jpg) | ![识图演示](docs/screenshots/vision-demo.jpg) | ![设置页](docs/screenshots/settings.jpg) |
 
-- HarmonyOS NEXT
-- ArkTS / ArkUI
-- 网络请求：`@kit.NetworkKit`
-- Markdown 渲染：`@luvi/lv-markdown-in`
+| HTML 预览 | 模型选择 |
+| :---: | :---: |
+| ![HTML 预览](docs/screenshots/html-preview.jpg) | ![模型选择](docs/screenshots/model-selector.jpg) |
 
-## 项目结构
+## 🛠️ 技术栈
+
+本项目基于 **HarmonyOS NEXT** 原生开发栈构建：
+
+- **核心框架**：ArkTS / ArkUI
+- **网络通信**：`@kit.NetworkKit`
+- **Markdown 渲染**：`@luvi/lv-markdown-in` (感谢开源社区贡献)
+
+## 📂 项目结构
 
 ```text
 entry/src/main/ets/
-├─ pages/                 # 页面与业务逻辑
-├─ view/                  # 可复用 UI 组件
-├─ entryability/          # 应用入口 Ability
-└─ entrybackupability/    # 备份扩展 Ability
+├── pages/                 # 页面与主要业务逻辑
+├── view/                  # 可复用 UI 组件库
+├── entryability/          # 应用入口 Ability
+└── entrybackupability/    # 数据备份与恢复扩展 Ability
 ```
 
-## 本地运行
+## 🚀 快速开始
 
-### 1. 环境要求
+### 环境要求
 
-- DevEco Studio（建议与项目 SDK 保持一致）
-- HarmonyOS SDK `6.0.2(22)`
-- Node.js（使用 DevEco 内置 Node 亦可）
+- **IDE**：DevEco Studio（建议保持最新版本）
+- **SDK**：HarmonyOS SDK `6.0.2(22)` 或更高版本
+- **Runtime**：Node.js
 
-### 2. 安装依赖
+### 安装步骤
 
-```bash
-ohpm install
-```
+1. **克隆代码**
+   ```bash
+   git clone [your-repo-url]
+   ```
 
-### 3. 构建
+2. **安装依赖**
+   ```bash
+   ohpm install
+   ```
 
-```bash
-hvigorw assembleHap
-```
+3. **构建与运行**
+   ```bash
+   hvigorw assembleHap
+   ```
+   或使用 DevEco Studio 直接按 `Run` 按钮运行。
 
-或使用 DevEco Studio 直接运行。
+## ⚙️ 配置说明
 
-## 配置说明
+首次启动应用后，请前往**设置页面**添加 API 配置：
 
-首次启动后请在应用内添加 API 配置：
+1. **API Endpoint**：模型服务商的接口地址（如 OpenAI / DeepSeek / Claude 等兼容 API）。
+2. **API Key**：你的 API 密钥。
+3. **默认模型**：设置你需要调用的具体模型名称（如 `gpt-4o`, `gemini-1.5-pro` 等）。
+4. **参数微调**：可自定义温度（Temperature）与最大输出 Token 限制。
 
-- API Endpoint
-- API Key
-- 默认模型
-- 温度与最大输出 token
+## ❤️ 致谢
 
-## 致谢
+- 特别感谢 **GPT-4o**, **Gemini 1.5 Pro**, **Claude 3.5 Sonnet**, **GLM-4** 等 AI 模型在这个项目开发过程中提供的全方位协助。
+- 感谢 [lv-markdown-in](https://gitee.com/luvi/lv-markdown-in) 提供的优秀 Markdown 渲染组件。
 
-- 这个项目能做出来，离不开 GPT、Gemini、Claude、GLM 这些 AI 工具的持续帮助，真的省了我很多摸索时间。
-- Markdown 渲染用到了 [lv-markdown-in](https://gitee.com/luvi/lv-markdown-in)
+---
+
+*Made with ❤️ and AI.*
