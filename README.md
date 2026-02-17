@@ -31,6 +31,8 @@
 - **网络通信**：`@kit.NetworkKit`
 - **Markdown 渲染**：`@luvi/lv-markdown-in` (感谢开源社区贡献)
 
+> 开发提醒：后续涉及 Markdown 解析与渲染的实现，请统一按照 `@luvi/lv-markdown-in` 的规范与能力范围处理。
+
 ## 📂 项目结构
 
 ```text
