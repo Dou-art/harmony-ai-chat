@@ -15,9 +15,6 @@
 - 历史会话按天分组
 
 ## 界面预览
-
-> 截图建议放在 `docs/screenshots/`，以下是默认引用路径。
-
 ![封面](docs/screenshots/cover.jpg)
 ![识图演示](docs/screenshots/vision-demo.jpg)
 ![设置页](docs/screenshots/settings.jpg)
