@@ -55,7 +55,7 @@ entry/src/main/ets/
 
 1. **克隆代码**
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/Dou-art/harmony-ai-chat
    ```
 
 2. **安装依赖**
